@@ -1,0 +1,38 @@
+<!Doctype HTML>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>QUIZ</title>
+	<link href="preconnect" href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="heading"><h1 id="text">QUIZZ<h1></div>
+			<div id="quiz"> <!---kontainer utama untuk mengelompokan elemen yang lain-->
+				<div id="question"></div> <!---sebagai kontainer utama dari semua elemen QnA, submit, dan hasil-->	
+				<label class="option"><input type="radio" name="option" value="1" /><span id="option1"></span></label>
+				<label class="option"><input type="radio" name="option" value="2" /><span id="option2"></span></label>
+				<label class="option"><input type="radio" name="option" value="3" /><span id="option3"></span></label>
+				<label class="option"><input type="radio" name="option" value="4" /><span id="option4"></span></label>
+				<button id="next" onclick="nextques();">Selanjutnya...</button>
+			</div>
+			<!--label untuk elemen input berfungsi agar user dapat mengklik teks untuk memfokuskan atau memilih elemen from terkait --->
+			<!--class="option": Atribut class untuk menerapkan gaya khusus pada semua elemen dengan kelas pada CSS. 
+			agar dapat di atur dengan gaya yang sama--->
+			<!--<input type="radio">: Tag <input> dengan type="radio"
+			 mendefinisikan pengguna memilih satu dari beberapa opsi. T--->
+			<!---<span id="option1">: Tag <span> digunakan sebagai kontainer untuk mengelompokan teks dalamm opsi a,b,c,d-->
+			
+			<div id="result" style="display:none"> <!--digunakan untuk menampilkan hasil dari kuis atau proses lainnya, 
+				namun dalam kondisi awalnya elemen ini disembunyikan dari tampilan--->
+			</div>
+			<button id="quit" onclick="quit();">keluar</button>
+			<script type="text/javascript" src="questions.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+    
+	
+</body>
+</html>
